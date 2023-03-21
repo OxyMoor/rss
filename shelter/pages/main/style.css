@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Georgia Regular";
+    font-family: "Georgia";
     src: url("../../assets/fonts/Georgia-Regular.ttf") format("ttf"),
     url("../../assets/fonts/Georgia-Regular.woff") format("woff");
     font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "Georgia Bold";
+    font-family: "Georgia";
     src: url("../../assets/fonts/Georgia-Bold.ttf") format("ttf"),
     url("../../assets/fonts/Georgia-Bold.woff") format("woff");
     font-style: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: "Arial Regular";
+    font-family: "Arial";
     src: url("../../assets/fonts/Arial-Regular.ttf") format("ttf"),
     url("../../assets/fonts/Arial-Regular.woff") format("woff");
     font-style: normal;
@@ -23,9 +23,203 @@
 }
 
 @font-face {
-    font-family: "Arial Italic";
+    font-family: "Arial";
     src: url("../../assets/fonts/Arial-Italic.ttf") format("ttf"),
     url("../../assets/fonts/Arial-Italic.woff") format("woff");
     font-style: italic;
     font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+body {
+    font-family: "Arial";
+}
+
+.header, .main, .footer {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.header__logo-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo-title {
+    margin-bottom: 10px;
+    font-family: "Georgia";
+    font-size: 32px;
+    line-height: 110%;
+    color: #F1CDB3;
+}
+
+.header__logo-subtitle {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.nav {
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 35px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+    padding-bottom: 5px;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+}
+
+.nav__link_disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.main {
+}
+.footer {
+}
+
+.section.not-only {
+}
+.section.about {
+}
+.section.friends {
+}
+.section.help {
+}
+.section.addition {
+}
+
+.footer__row {
+}
+
+
+.not-only__row {
+}
+.about__row {
+}
+.friends__row {
+}
+.help__row {
+}
+.addition__row {
+}
+.footer__questions-wrap {
+}
+.footer__visit-wrap {
+}
+
+
+.section__title.not-only__title {
+}
+.section__description.not-only__description {
+}
+.not-only__make-a-friend-link {
+}
+.about__content {
+}
+.section__title {
+}
+.friends__slider.slider {
+}
+.help__items {
+}
+.addition__content {
+}
+.footer__title {
+}
+.footer__contact-wrap {
+}
+
+.section__description.about__description {
+}
+.slider__btns {
+}
+.slider__items {
+}
+.friends__rest-link {
+}
+.help__item {
+}
+.addition__subtitle {
+}
+.addition__bank-link {
+}
+.section__description.addition__description {
+}
+.footer__contact-img {
+}
+.footer__contact-text {
+}
+
+.slider__btn.slider__btn-prev {
+}
+.slider__btn.slider__btn-next {
+}
+.slider__item {
+}
+.help__img {
+}
+.help__description {
+}
+.addition__card-icon {
+}
+.addition__card-nubmer {
+}
+.slider__btn-img.slider__btn-img-prev {
+}
+.slider__btn-img.slider__btn-img-next {
+}
+.slider__img {
+}
+.slider__title {
+}
+.slider__item-btn {
 }
