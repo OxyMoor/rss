@@ -84,6 +84,19 @@ body {
     flex-direction: column;
 }
 
+.header__logo-link:hover, .header__logo-link:focus {
+    outline: none;
+}
+
+.header__logo-link:active {
+    position: relative;
+    top: 1px;
+}
+
+.header__logo-link:hover > .header__logo-title, .header__logo-link:focus > .header__logo-title {
+    color: #FFFFFF;
+}
+
 .header__logo-title {
     margin-bottom: 10px;
     font-family: "Georgia";
@@ -91,6 +104,7 @@ body {
     font-size: 32px;
     line-height: 110%;
     color: #F1CDB3;
+    transition: color 0.2s ease-in;
 }
 
 .header__logo-subtitle {
@@ -114,6 +128,17 @@ body {
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
+    transition: color 0.2s ease-in;
+}
+
+.nav__link:hover, .nav__link:focus {
+    color: #FFFFFF;
+    outline: none;
+}
+
+.nav__link:active {
+    position: relative;
+    top: 1px;
 }
 
 .nav__link_disabled {
@@ -187,6 +212,18 @@ body {
 
 .not-only__make-a-friend-link {
     width: 207px;
+    transition: background 0.2s ease-in;
+}
+
+.not-only__make-a-friend-link:hover, .not-only__make-a-friend-link:focus {
+    background: #FFFFFF;
+    border: 2px solid #F1CDB3;
+    outline: none;
+}
+
+.not-only__make-a-friend-link:active {
+    position: relative;
+    top: 1px;
 }
 
 /* about */
@@ -256,6 +293,17 @@ body {
     border: 2px solid #F1CDB3;
     border-radius: 50%;
     cursor: pointer;
+    transition: background 0.2s ease-in;
+}
+
+.slider__btn:hover, .slider__btn:focus {
+    background: #F1CDB3;
+    outline: none;
+}
+
+.slider__btn:active {
+    position: relative;
+    top: 1px;
 }
 
 .slider__btn-img-prev {
@@ -280,6 +328,11 @@ body {
     background: #FAFAFA;
     border-radius: 9px;
     overflow: hidden;
+    transition: transform 0.2s ease-in;
+}
+
+.slider__item:hover {
+    transform: scale(1.05);
 }
 
 .slider__img {
@@ -301,10 +354,33 @@ body {
     background: transparent;
     border: 2px solid #F1CDB3;
     cursor: pointer;
+    transition: background 0.2s ease-in;
+}
+
+.slider__item-btn:hover, .slider__item-btn:focus {
+    background: #F1CDB3;
+    outline: none;
+}
+
+.slider__item-btn:active {
+    position: relative;
+    top: 1px;
 }
 
 .friends__rest-link {
     width: 261px;
+    transition: background 0.2s ease-in;
+}
+
+.friends__rest-link:hover, .friends__rest-link:focus {
+    background: #FFFFFF;
+    border: 2px solid #F1CDB3;
+    outline: none;
+}
+
+.friends__rest-link:active {
+    position: relative;
+    top: 1px;
 }
 
 /* help */
@@ -387,11 +463,9 @@ body {
 .addition__bank-link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 349px;
     height: 43px;
-    padding-left: 15px;
-    padding-right: 15px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 20px;
@@ -400,6 +474,22 @@ body {
     color: #545454;
     background: #F1CDB3;
     border-radius: 9px;
+    transition: background 0.2s ease-in;
+}
+
+.addition__bank-link:hover, .addition__bank-link:focus {
+    background: #FFFFFF;
+    border: 2px solid #F1CDB3;
+    outline: none;
+}
+
+.addition__bank-link:active {
+    position: relative;
+    top: 1px;
+}
+
+.addition__card-icon {
+    margin-right: 15px;
 }
 
 .addition__description {
@@ -464,4 +554,15 @@ body {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    transition: color 0.2s ease-in;
+}
+
+.footer__contact-link:hover, .footer__contact-link:focus {
+    color: #FFFFFF;
+    outline: none;
+}
+
+.footer__contact-link:active {
+    position: relative;
+    top: 1px;
 }
