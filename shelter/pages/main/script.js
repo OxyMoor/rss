@@ -21,4 +21,3 @@ anchorLinks.forEach(anchorLink => {
         smoothScroll(anchorLink);
     });
 });
-
