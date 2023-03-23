@@ -105,11 +105,13 @@ body {
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
+    letter-spacing: 0.05em;
     color: #545454;
     transition: color 0.2s ease-in;
 }
 
 .header__logo-subtitle {
+    padding-left: 5px;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
@@ -122,6 +124,7 @@ body {
     align-items: center;
     justify-content: space-between;
     column-gap: 35px;
+    margin-top: -8px;
 }
 
 .nav__link {
@@ -176,7 +179,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     column-gap: 40px;
-    row-gap: 30px;
+    row-gap: 32px;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
@@ -198,7 +201,7 @@ body {
 }
 
 .slider__img {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .slider__title {
@@ -347,12 +350,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    row-gap: 40px;
+    row-gap: 39px;
     max-width: 302px;
 }
 
 .footer__visit-wrap {
-    row-gap: 32px;
+    row-gap: 33px;
 }
 
 .footer__title {
