@@ -167,6 +167,7 @@ body {
     padding-top: 343px;
     padding-bottom: 243px;
     background: url("../../assets/images/welcome-bg.png") right bottom no-repeat;
+    background-size: 58%;
 }
 
 .section__title {
@@ -286,6 +287,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 2;
 }
 
 .slider__btn {
@@ -316,12 +318,28 @@ body {
 }
 
 .slider__items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* column-gap: 90px; */
+    width: 990px;
+    height: 435px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.slider__items-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 90px;
-    margin-bottom: 60px;
-    overflow: hidden;
+    width: 2785px;
+    height: 100%;
 }
 
 .slider__item {
@@ -329,6 +347,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 270px;
     padding-bottom: 30px;
     background: #FAFAFA;
     border-radius: 9px;
