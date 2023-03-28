@@ -77,3 +77,35 @@
         width: 50%;
     }
 }
+
+@media all and (max-width: 768px) {
+    .nav__btn {
+        display: flex;
+    }
+    
+    .nav__list {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 40px;
+        width: 320px;
+        height: 100vh;
+        padding-top: 248px;
+        background: #292929;
+        transition: right 0.5s ease-in;
+    }
+
+    .nav__link {
+        font-size: 32px;
+    }
+
+    .nav.open .nav__list {
+        right: 0;
+    }
+
+    .nav.open .nav__btn {
+        transform: rotate(90deg);
+    }
+}
