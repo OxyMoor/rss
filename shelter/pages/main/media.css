@@ -125,6 +125,11 @@
 
 @media all and (max-width: 685px) {
     .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header__container {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -219,11 +224,6 @@
     .addition__subtitle {
         letter-spacing: 0;
         line-height: 160%;
-    }
-
-    .footer__container, .not-only__container, .friends__container, .help__container {
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .footer__row {
