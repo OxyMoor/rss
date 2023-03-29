@@ -54,6 +54,7 @@ body {
 
 .header, .main, .footer {
     margin: 0 auto;
+    /* overflow-x: hidden; */
 }
 
 .container {
@@ -61,7 +62,7 @@ body {
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* header */
