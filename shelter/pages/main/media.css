@@ -95,7 +95,6 @@
         padding-bottom: calc(100% - 475px);
         padding-top: 248px;
         background: #292929;
-        /* transition: transform 2s ease-in; */
     }
 
     .nav__link {
@@ -103,6 +102,7 @@
     }
 
     .nav.open .nav__list {
+        display: flex;
         right: 0;
     }
 
@@ -231,7 +231,7 @@
         align-items: center;
         row-gap: 40px;
         padding-bottom: 310px;
-        background-size: 87%;
+        background-size: 45%;
     }
 
     .footer__questions-wrap, .footer__visit-wrap {
@@ -268,6 +268,10 @@
         width: 281px;
         font-size: 15px;
         line-height: 110%;
+    }
+
+    .footer__row {
+        background-size: 87%;
     }
 }
 
