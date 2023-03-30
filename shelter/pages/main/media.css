@@ -51,6 +51,10 @@
 }
 
 @media all and (max-width: 868px) {
+    .help__items {
+        column-gap: 8.5%;
+    }
+
     .help__item {
         min-width: 170px;
         width: 33.33%;
@@ -88,7 +92,7 @@
         padding-top: 42px;
         padding-bottom: 435px;
         background-position: bottom 42px center;
-        background-size: 97%;
+        background-size: 50%;
     }
 
     .about__content {
@@ -172,6 +176,10 @@
 
     .not-only__description {
         text-align: center;
+    }
+
+    .about__row {
+        background-size: 97%;
     }
 
     .addition__bank-link {

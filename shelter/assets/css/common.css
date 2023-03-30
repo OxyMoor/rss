@@ -159,6 +159,21 @@ body {
     height: 2px;
 }
 
+.rounded-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background: #F1CDB3;
+    border-radius: 100px;
+}
+
 /* friends */
 .slider__item {
     display: flex;
@@ -170,10 +185,12 @@ body {
     background: #FAFAFA;
     border-radius: 9px;
     overflow: hidden;
+    cursor: pointer;
     transition: transform 0.2s ease-in;
 }
 
 .slider__item:hover {
+    background: #FFFFFF;
     transform: scale(1.05);
 }
 
@@ -193,8 +210,16 @@ body {
 
 .slider__item-btn {
     width: 187px;
+    height: 52px;
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
     background: transparent;
     border: 2px solid #F1CDB3;
+    border-radius: 100px;
     cursor: pointer;
     transition: background 0.2s ease-in;
 }
@@ -236,7 +261,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    column-gap: 160px;
+    column-gap: 135px;
     padding-top: 56px;
     padding-bottom: 60px;
     background: url("../../assets/images/footer-bg.png") right bottom no-repeat;

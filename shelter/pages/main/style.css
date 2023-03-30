@@ -81,20 +81,7 @@
     color: #CDCDCD;
 }
 
-.rounded-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 52px;
-    font-family: "Georgia";
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #292929;
-    background: #F1CDB3;
-    border-radius: 100px;
-}
+
 
 .not-only__make-a-friend-link {
     width: 207px;
@@ -242,7 +229,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 8.5%;
+    column-gap: 9.8%;
     row-gap: 55px;
 }
 
