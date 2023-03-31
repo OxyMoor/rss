@@ -5,7 +5,7 @@
     }
 
     .footer__row {
-        justify-content: space-between;
+        justify-content: center;
         padding-top: 30px;
         padding-bottom: 375px;
         background-position: bottom center;
@@ -14,7 +14,6 @@
 
 @media all and (max-width: 868px) {
     .footer__row {
-        justify-content: center;
         column-gap: 35px;
     }
     

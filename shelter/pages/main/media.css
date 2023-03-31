@@ -126,7 +126,6 @@
     }
 
     .help__items {
-        justify-content: space-between;
         row-gap: 30px;
     }
 
@@ -186,5 +185,11 @@
         width: 281px;
         font-size: 15px;
         line-height: 110%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .help__items {
+        justify-content: space-between;
     }
 }
