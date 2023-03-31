@@ -32,6 +32,10 @@
     background: #F1CDB3;
 }
 
+.nav__btn:hover .nav__btn-line, .nav__btn:focus .nav__btn-line {
+    background: #F1DFD2;
+}
+
 /* not only */
 .not-only {
     background: url("../../assets/images/bg-gradient.png") center top no-repeat,

@@ -37,6 +37,10 @@
     background: #000000;
 }
 
+.nav__btn:hover .nav__btn-line, .nav__btn:focus .nav__btn-line {
+    background: #636363;
+}
+
 /* friends */
 .friends {
     background: #F6F6F6;
