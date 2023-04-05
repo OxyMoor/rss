@@ -128,6 +128,7 @@
 
 /* friends */
 .friends {
+    position: relative;
     background: #F6F6F6;
 }
 
@@ -158,7 +159,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index: 2;
 }
 
 .slider__btn {
