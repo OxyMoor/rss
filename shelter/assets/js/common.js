@@ -92,3 +92,24 @@ friendsSection.addEventListener('click', (event) => {
     }
 });
 
+// slider
+const sliderBtnPrev = document.querySelector('.slider__btn-prev');
+const sliderBtnNext = document.querySelector('.slider__btn-next');
+const sliderItems = document.querySelector('.slider__items');
+const sliderItemsInner = document.querySelector('.slider__items-inner');
+
+let sliderItemsInnerTranslate = 0
+
+sliderBtnPrev.addEventListener('click', () => {
+    let sliderItemsInnerGap = parseFloat(window.getComputedStyle(sliderItemsInner, null).columnGap);
+    let sliderItemsWidth = parseFloat(window.getComputedStyle(sliderItems, null).width) + sliderItemsInnerGap;
+    sliderItemsInnerTranslate -= sliderItemsWidth;
+    sliderItemsInner.style.transform = `translateX(${sliderItemsInnerTranslate}px)`;
+});
+
+sliderBtnNext.addEventListener('click', () => {
+    let sliderItemsInnerGap = parseFloat(window.getComputedStyle(sliderItemsInner, null).columnGap);
+    let sliderItemsWidth = parseFloat(window.getComputedStyle(sliderItems, null).width) + sliderItemsInnerGap;
+    sliderItemsInnerTranslate += sliderItemsWidth;
+    sliderItemsInner.style.transform = `translateX(${sliderItemsInnerTranslate}px)`;
+});
