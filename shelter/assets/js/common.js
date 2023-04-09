@@ -98,6 +98,51 @@ const sliderBtnNext = document.querySelector('.slider__btn-next');
 const sliderItems = document.querySelector('.slider__items');
 const sliderItemsInner = document.querySelector('.slider__items-inner');
 
+function suffleArr(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+
+    return arr;
+}
+
+function createItemsArr() {
+    let items = [0, 1, 2, 3, 4, 5, 6, 7];
+    let additionalItem = Math.floor(Math.random()*7);
+
+    items.push(additionalItem);
+
+    return suffleArr(items);
+}
+
+let items = createItemsArr();
+
+async function renderItems() {
+    const data = await getPetInfo();
+    
+    items.forEach((item) => {
+        const sliderItem = document.createElement('div');
+
+        sliderItem.classList.add('slider__item');
+        sliderItem.setAttribute('data-id', `${item}`);
+    
+        getPetInfo().then(data => {
+            sliderItem.innerHTML = `
+                <img class="slider__img" src="${data[item].img}" alt="image: pet ${data[item].name}">
+                <h3 class="slider__title">${data[item].name}</h3>
+                <button class="slider__item-btn rounded-link">Learn more</button>
+            `;
+        });
+    
+        sliderItemsInner.appendChild(sliderItem);
+    });
+}
+
+renderItems(); 
+
+
+
 let sliderItemsInnerTranslate = 0
 
 sliderBtnPrev.addEventListener('click', () => {
