@@ -46,7 +46,9 @@ friendsSection.addEventListener('click', (event) => {
                 <button class="popup__btn">
                     <img class="popup__btn-icon" src="../../assets/icons/icon-close.svg" alt="icon: close icon">
                 </button>
-                <img class="popup__img" src="${data[itemId].img}" alt="image: pet ${data[itemId].name}">
+                <div class="popup__img-wrap">
+                    <img class="popup__img" src="${data[itemId].img}" alt="image: pet ${data[itemId].name}">
+                </div>
                 <div class="popup__content">
                     <h3 class="popup__name">${data[itemId].name}</h3>
                     <h4 class="popup__type">${data[itemId].type} - ${data[itemId].breed}</h4>
