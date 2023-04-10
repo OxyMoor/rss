@@ -208,10 +208,23 @@
     align-items: center;
     justify-content: center;
     column-gap: 89px;
-    /* width: 2785px; */
     width: 3140px;
     height: 100%;
     transition: transform 0.3s ease-in;
+}
+
+.slider__btn_disabled {
+    pointer-events: none;
+    cursor: default;   
+    border: 2px solid #BBBBBB;   
+}
+
+.slider__btn_disabled:focus {
+    background: transparent;
+}
+
+.slider__btn_disabled > .slider__btn-img {
+    filter: invert(91%) sepia(0%) saturate(136%) hue-rotate(147deg) brightness(90%) contrast(94%);
 }
 
 /* help */

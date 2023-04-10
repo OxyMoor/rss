@@ -110,17 +110,19 @@ function suffleArr(arr) {
 }
 
 function createItemsArr() {
-    let items = [0, 1, 2, 3, 4, 5, 6, 7];
-    let additionalItem = Math.floor(Math.random()*7);
+    const items = [0, 1, 2, 3, 4, 5, 6, 7];
+    const shuffledItems = suffleArr(items);
 
-    items.push(additionalItem);
+    shuffledItems.push(shuffledItems[2]);
 
-    return suffleArr(items);
+    return shuffledItems;
 }
 
 let items = createItemsArr();
 
 async function renderItems() {
+    // sliderBtnNext.classList.add('slider__btn_disabled');
+
     const data = await getPetInfo();
     
     items.forEach((item) => {
@@ -145,18 +147,41 @@ renderItems();
 
 
 
-let sliderItemsInnerTranslate = 0
+let sliderItemsInnerTranslate = 0;
+let counter = 1;
+
+if (counter === 1) {
+    sliderBtnNext.classList.add('slider__btn_disabled');
+}
 
 sliderBtnPrev.addEventListener('click', () => {
+    let sliderItemsInnerWidth = parseFloat(window.getComputedStyle(sliderItemsInner, null).width);
+
     let sliderItemsInnerGap = parseFloat(window.getComputedStyle(sliderItemsInner, null).columnGap);
     let sliderItemsWidth = parseFloat(window.getComputedStyle(sliderItems, null).width) + sliderItemsInnerGap;
     sliderItemsInnerTranslate -= sliderItemsWidth;
+    
+    if (sliderItemsInnerTranslate <= -(sliderItemsInnerWidth + sliderItemsInnerTranslate)) {
+        sliderBtnPrev.classList.add('slider__btn_disabled');
+    }
+
+    sliderBtnNext.classList.remove('slider__btn_disabled');
     sliderItemsInner.style.transform = `translateX(${sliderItemsInnerTranslate}px)`;
 });
 
 sliderBtnNext.addEventListener('click', () => {
+    let sliderItemsInnerWidth = parseFloat(window.getComputedStyle(sliderItemsInner, null).width);
+    
     let sliderItemsInnerGap = parseFloat(window.getComputedStyle(sliderItemsInner, null).columnGap);
     let sliderItemsWidth = parseFloat(window.getComputedStyle(sliderItems, null).width) + sliderItemsInnerGap;
     sliderItemsInnerTranslate += sliderItemsWidth;
+    
+    counter++;
+    console.log(sliderItemsInnerTranslate, sliderItemsInnerWidth, sliderItemsWidth, (sliderItemsInnerWidth + sliderItemsWidth));
+    if (sliderItemsInnerTranslate >= (sliderItemsInnerWidth - sliderItemsInnerTranslate - sliderItemsWidth * counter)) {
+        counter = 1;
+        sliderBtnNext.classList.add('slider__btn_disabled');
+    }
+    sliderBtnPrev.classList.remove('slider__btn_disabled');
     sliderItemsInner.style.transform = `translateX(${sliderItemsInnerTranslate}px)`;
 });
